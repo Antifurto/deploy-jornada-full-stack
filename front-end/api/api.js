@@ -2,7 +2,7 @@ import "dotenv/config";
 // Fetch ou Axios
 import axios from "axios";
 
- const { NODE_ENV } = process.env;
+ const { NODE_ENV } = import.meta.env.VITE_NODE_ENV;
  const URL = NODE_ENV === "development" ? "http://localhost:3001/api" : "/api";
 
 //const URL = "https://deploy-jornada-full-stack.onrender.com/api";
